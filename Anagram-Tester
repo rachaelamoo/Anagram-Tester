@@ -1,0 +1,20 @@
+# Check if two words are anagrams 
+# Example:
+# find_anagrams("hello", "check") --> False
+# find_anagrams("below", "elbow") --> True
+
+
+def find_anagram(word, anagram):
+    word_break = sorted(word)
+    anagram_break = sorted(anagram)
+    if(word_break == anagram_break):
+        print(True)
+    else:
+        print(False)
+
+
+word= str(input("Enter the word: "))
+
+anagram= str(input("Enter the anagram: "))
+
+find_anagram(word, anagram)
